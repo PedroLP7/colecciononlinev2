@@ -2,7 +2,7 @@
 
 require_once('../php_librarys/bdpokemon.php');
 
- $pokemons = searchPoke($_POST['busqueda']);
+$pokemons = selectPokemons();
 
 
 
@@ -62,7 +62,7 @@ require_once('../php_librarys/bdpokemon.php');
 
                             </form>
 
-                            <form action="../webApp/modCartas.php" method="POST" enctype="multipart/form-data">
+                            <form action="../api/modCartas.php" method="POST" enctype="multipart/form-data">
                                 <button style="position : relative; left: 10px; top : -4px;" type="submit" class="btn " name="mod"><img src="../media/carta/mod.png" alt="mod"
                                         class="imgcustom"></button>
                                 <input type="hidden" size="1" name="idPoke" value="<?php echo $pokemon['idPoke'] ?>">
@@ -71,6 +71,7 @@ require_once('../php_librarys/bdpokemon.php');
                                 <input type="hidden" name="descripcion" value="<?php echo $pokemon['descripcion'] ?>">
                                 <input type="hidden" name="coleccion" value="<?php echo $pokemon['coleccion'] ?>">
                                 <input type="hidden" name="link" value="<?php echo $pokemon['link'] ?>">
+                                <input type="hidden" name="imagenPoke2" value="<?php echo $pokemon['imagenPoke'] ?>">
                             </form>
                         </div>
 
@@ -90,7 +91,7 @@ left: -130px; top: -10px;" >
 
                         
                         <p class ="btn font-weight-bold ">  <?php echo $pokemon['region'] ?> </p>
-                        <p  class="btn font-weight-bold" style="widht : 20px"> <?php echo $pokemon['tipo1'] . '/'. $pokemon['tipo2'] ;  ?> </p>
+                        <p  class="btn font-weight-bold" style="widht : 20px"><?php echo $pokemon['tipos']  ?> </p>
                         <div class="card-body" style="position :relative; left :40px">
                             
                             <a href="<?php echo $pokemon['link']; ?>" class="link-underline-opacity-0 link-danger font-weight-bold "> Tienda oficial</a>

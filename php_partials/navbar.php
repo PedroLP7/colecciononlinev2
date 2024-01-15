@@ -20,7 +20,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../webApp/index.php">
+    <a class="navbar-brand" href="../api/index.php">
     <img src="../media/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
 
 
@@ -35,7 +35,7 @@
             MANAGE POKEMONS
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="../webApp/addCartas.php">Add Cards</a></li>
+            <li><a class="dropdown-item" href="../api/addCartas.php">Add Cards</a></li>
            
           
           </ul>

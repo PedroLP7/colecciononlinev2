@@ -4,12 +4,12 @@ session_start();
 function openDB()
 {
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "mysql";
+    $servername = "sql.freedb.tech";
+    $username = "freedb_pedrolp7";
+    $password = "se2ku9V@JFSY*BE";
 
 
-    $conexion = new PDO("mysql:host=$servername;dbname=pokemon", $username, $password);
+    $conexion = new PDO("mysql:host=$servername;dbname=freedb_pokemon", $username, $password);
     // set the PDO error mode to exception
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conexion->exec("set names utf8");

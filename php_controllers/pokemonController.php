@@ -41,10 +41,10 @@ if (isset($_POST['insert'])) {
 
      // Verifica si hay errores y redirige
      if (isset($_SESSION['error'])) {
-        header('Location: ../webApp/addCartas.php');
+        header('Location: ../api/addCartas.php');
         exit();
     } else {
-        header('Location: ../webApp/index.php');
+        header('Location: ../api/index.php');
         exit();
     }
 
@@ -59,7 +59,7 @@ if (isset($_POST['delete'])) {
         deleteTipoPoke($_POST['idPoke']);
         deletePokemon($_POST['idPoke']);
      
-        header('Location: ../webApp/index.php');
+        header('Location: ../api/index.php');
         exit();
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
@@ -96,7 +96,7 @@ if (isset($_POST['delete'])) {
         updateTipoPoke($idPoke,$selectedTipos);
 
     
-         header('Location: ../webApp/index.php');
+         header('Location: ../api/index.php');
         exit();
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
