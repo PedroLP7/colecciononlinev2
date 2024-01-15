@@ -1,0 +1,47 @@
+
+
+
+
+
+.imgcustom{
+height: 25px;
+width: 25px;
+
+}
+
+
+.readonly-field {
+    background-color: #f5f5f5; /* Cambia el color de fondo */
+    color: #999; /* Cambia el color del texto */
+    cursor: not-allowed; /* Cambia el cursor del mouse */
+    border: 1px solid #5a4a4a9c; /* Opcional: Agrega un borde para mayor claridad */
+}
+
+
+
+.card{
+
+    background-image: url('../media/carta/fondo.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; 
+
+}
+
+
+body {
+    background-image: url('../media/carta/fondo.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center center; 
+   overflow: scroll;
+
+}
+ 
+
+.imagenmod{
+    width: 50px;
+    height: 50px;
+}
