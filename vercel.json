@@ -1,10 +1,15 @@
 {
     "functions": {
-      "api/index.php": {
-        "runtime": "vercel-php@0.6.0"
-      }
-    },
+        "api/index.php": {
+          "runtime": "vercel-php@0.6.0",
+          "includeFiles": [
+            "php_librarys/**/*"
+          ]
+        }
+     }
+     ,
     "routes": [
       { "src": "/(.*)", "dest": "/api/index.php" }
     ]
   }
+  
