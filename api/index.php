@@ -1,6 +1,6 @@
 <?php
 
-require_once('./bdpokemon.php');
+require_once('../php_librarys/bdpokemon.php');
 
 $pokemons = selectPokemons();
 
